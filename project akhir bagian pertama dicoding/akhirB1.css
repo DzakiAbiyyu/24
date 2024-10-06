@@ -1,0 +1,170 @@
+    * {
+        margin: 0; /* Menghilangkan margin default */
+        padding: 0; /* Menghilangkan padding default */
+        box-sizing: border-box; /* Memastikan ukuran elemen termasuk padding dan border */
+    }
+    body {
+        font-family:'Quicksand',sans-serif;
+        /* height: 100vh; */
+        margin:0;
+        display: flex;
+        flex-direction: column;
+    }
+    /* ... kode CSS sebelumnya ... */
+
+    header.navbar-container {
+        display: flex; /* Menggunakan flexbox untuk penyusunan elemen di dalam navbar */
+        justify-content: space-between; /* Menyebar item di dalam navbar dengan jarak yang merata */
+        align-items: center; /* Mengatur item agar sejajar secara vertikal */
+        padding: 1rem 2rem; /* Padding atas-bawah 1rem dan kiri-kanan 2rem */
+        background-color: #2d3e50; /* Warna latar belakang navbar */
+        
+    }
+    header.navbar-container .logo a {
+        color: white;
+        text-decoration: none;
+    }
+
+    header.navbar-container .nav-list {
+        display: flex; /* Menggunakan flexbox untuk menyusun elemen di dalam nav-list */
+        align-items: center; /* Menyusun item secara vertikal */
+    }
+
+    header.navbar-container .nav-list ul {
+        display: flex; /* Menggunakan flexbox untuk membuat daftar horizontal */
+        list-style: none; /* Menghilangkan bullet point dari list */
+        gap: 2rem; /* Jarak antara item dalam daftar */
+    }
+    header.navbar-container .nav-list ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    header.navbar-container .auth-buttons {
+        display: flex; /* Menggunakan flexbox untuk menyusun tombol secara horizontal */
+        gap: 1rem; /* Jarak antara tombol */
+    }
+
+    /* Mengatur gaya untuk tombol login dan signup */
+    header.navbar-container .auth-buttons .login,
+    header.navbar-container .auth-buttons .signup {
+        padding: 0.5rem 1rem; /* Padding dalam tombol */
+        border-radius: 999px; /* Membuat sudut tombol menjadi melingkar */
+        border: 1px solid white; /* Border tombol berwarna putih */
+        text-decoration: none; /* Menghilangkan garis bawah dari tombol */
+        color: white; /* Warna teks tombol */
+    }
+
+    /* Gaya khusus untuk tombol signup */
+    header.navbar-container .auth-buttons .signup {
+        background-color: white; /* Latar belakang tombol signup berwarna putih */
+        color: #2d3e50; /* Warna teks tombol signup menjadi gelap */
+    }
+
+    /* Mengatur efek hover pada tombol login dan signup */
+    header.navbar-container .auth-buttons .login:hover,
+    header.navbar-container .auth-buttons .signup:hover {
+        background-color: #89b0d9; /* Warna latar belakang saat di-hover */
+        color: white; /* Mengubah warna teks menjadi putih saat di-hover */
+    }
+    body .responsive-div {
+        height: 300px;
+        width: cover;
+        display: flex;
+        /* Aktifkan Flexbox pada div */
+        justify-content: center;
+        /* Horizontal alignment */
+        align-items: center;
+        /* Vertical alignment */
+        text-align: center;
+        /* Menjaga teks tetap di tengah jika lebih dari satu baris */
+        background-color: lightblue;
+    }
+    /* Gaya untuk elemen main */
+    main {
+        padding: 2rem; /* Padding untuk elemen main */
+        background-color: #e4e4e4; /* Warna latar belakang */
+        display: flex;
+        flex-flow: row wrap;
+        gap: 20px; 
+    }
+    main .paragraf {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* background-color: red; */
+        width: 100%;
+        height: cover;
+        font-size: 30px;
+        align-self: flex-start; /* Pastikan tetap di atas */
+    }
+    #content {
+        flex: 5;
+        display: flex; /* Mengatur elemen di dalamnya untuk ditampilkan dalam baris */
+        flex-flow: row wrap;
+        gap: 20px; /* Jarak antar elemen */
+      }
+    main article {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* align-items: flex-start; */
+        /* background-color: #aad3ff; */
+        width: 65%;
+        /* height: 400px; */
+        padding: 20px;
+        border: 1px rgb(0, 71, 236) solid;
+        border-radius: 18px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    }
+    article h2 {
+        color: rgb(134, 12, 12);
+    }
+    article img {
+        width: 300px;
+        height: cover;
+        margin: 10px;
+    }
+    aside {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        flex-grow: 1;
+        width: 30%;
+        flex-shrink: 0; /* Mencegah aside mengecil jika ruang terbatas */
+        max-height: auto;
+        margin: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+        border: 5px white solid;
+        border-radius: 18px;
+        padding-bottom: 10px;
+        
+    }
+    aside h2 {
+        margin: 10px;
+    }
+    aside img {
+        margin:auto;
+        width: 200px;
+        height: auto;
+    }
+    aside p {
+        margin-left: 20px;
+    }
+    
+
+    
+    
+
+    /* Bagian footer */
+    footer {
+        background-color: #2d3e50;
+        height: 100px;
+        color: white;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+    }
+
